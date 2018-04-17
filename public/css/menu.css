@@ -1,0 +1,47 @@
+.list-menu {
+    height: 100%;
+    margin-top: 0;
+    padding-bottom: 0;
+    display: inline-block;
+}
+.menu_element {
+    color: white;
+    text-decoration: none;
+}
+.muc {
+    display: inline-block;
+    width: auto;
+    float: left;
+    height: 100%;
+    list-style-type: none;
+    text-align: center;
+    /* padding: 0; */
+    margin: 0;
+    font-family: inherit;
+}
+.muc li {
+    margin: 15px 5px auto 5px;
+}
+#test {
+    display: none;
+}
+.listsubmenu {
+    width: 100%;
+    padding-left: 0;
+    /* visibility: hidden; */
+    /* display: none; */
+    top: 0;
+    /* left: 100%; */
+    position: relative;
+}
+.submenu1 {
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-align: left;
+    list-style-type: none;
+    margin-left: 0;
+}
+.submenu1 li {
+    padding-top: 10px;
+}

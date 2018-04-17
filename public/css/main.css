@@ -1,0 +1,35 @@
+#menu {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    position: fixed; /* stay in place */
+    color: white;
+    display: inline-block;
+    font-family: inherit;
+}
+.list-left {
+    float: left;
+}
+.list-right {
+    float: right;
+    margin-right: 30px;
+}
+.sign {
+    float: right;
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    margin: auto 1px auto 0;
+}
+#wrapped {
+    margin-top: 50px;
+    width: 100%;
+    height: 610px;
+}
+#wrapped embed {
+    width: 100%;
+    height: 100%;
+}
