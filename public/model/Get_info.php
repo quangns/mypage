@@ -27,5 +27,34 @@ class list_danhmuc {
             echo "Error: " . $e->getMessage();
         }
     }
+
+    public function sothich($iddanhmuc) {
+        try {
+            $qr = " select * from sothich
+                    where id_danhmuc =$iddanhmuc;
+            ";
+            $stmt = $this->conn->prepare($qr);
+            $stmt->execute();
+            $result= $stmt->fetchAll(PDO::FETCH_OBJ);
+            return $result;
+        }
+        catch(PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+
+    }
+
+    public function kinhnghiem() {
+        try {
+            $qr = " select * from kinhnghiem ";
+            $stmt = $this->conn->prepare($qr);
+            $stmt->execute();
+            $result= $stmt->fetchAll(PDO::FETCH_OBJ);
+            return $result;
+        }
+        catch(PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+    }
 }
 ?>

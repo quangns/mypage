@@ -26,10 +26,14 @@ $(document).ready(function() {
                 clicksign();  
             }
             else {
-                // $url = $(this).attr("id");
+                // $str = "?p="
+                // $id = $(this).attr("id");
+                // $url = $str1.concat($url);
+                // alert($url);
                 // window.history.pushState("", "", $url);
                 // var $url1      = window.location.href; 
                 // alert($url1 );
+                $(this).css("background-color","#74777a");
             }
         }
     })

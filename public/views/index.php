@@ -1,10 +1,12 @@
 <?php
-    require "../controller/c_listmenu.php";
-    // $p1 = $_GET['p'];
-    // echo var_dump($p1);
-    $cd = new listmenu();
-    $file = $cd->redirect_menu();
-    echo var_dump($file);
+    include "../controller/c_listmenu.php";
+    $menu = new listmenu();
+    if (isset($_GET["p"])) {
+        $p = $_GET["p"];
+    }
+    else {
+        $p = "";
+    }
 ?>
 
 <!DOCTYPE html>
@@ -13,13 +15,16 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ho so cua Quang</title>
+    <title>Profile of QuangNS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
-    <script src="jquery.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/menu.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/music.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/experience.css" />
+    <script src="../jquery.js"></script>
     <script src="/socket.io/socket.io.js"></script>
-    <script type="text/javascript" src="./js/handle_header.js"></script>
-    <script type="text/javascript" src="./js/handle_body.js"></script>
+    <script type="text/javascript" src="../js/handle_header.js"></script>
+    <script type="text/javascript" src="../js/handle_body.js"></script>
 </head>
 <body>
     <div id="content-page">
@@ -35,9 +40,14 @@
                 ?>
             </ul>
         </div>
-        <div id="wrapped">
-            <!-- <embed pluginspage="http://www.adobe.com/products/acrobat/readstep2.html"> -->
-        
+        <div id="wrapper">
+            <!-- <embed src="files/CVofQuang.pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html"> -->
+            <?php
+                $str = $menu->redirect_menu();
+                // // echo var_dump($_GET);
+                // // echo var_dump($str);
+                require $str;
+            ?>
             <!-- noi dung web, su dung ajax -->
         </div>
     </div>

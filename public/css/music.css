@@ -1,0 +1,26 @@
+.baoham {
+    width: 50%;
+    margin: 90px auto auto auto;
+}
+.list {
+    width: 100%;
+    height: 150px;
+    margin: 10px auto;
+    margin-top: 10px;
+    border: solid 1px black;
+}
+.showmusic {
+    display: inline-block;
+    float: left;
+}
+.showleft {
+    width: 40%;
+    height: 100%;
+}
+.showleft img {
+    width: 100%;
+    height: 100%;
+}
+.showright {
+    padding-left: 20px;
+}

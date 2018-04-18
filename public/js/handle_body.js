@@ -1,6 +1,8 @@
 $(document).ready(function() {
-    $("#hoso").click(function() {
-        $("#wrapped embed").attr("src", "files/CVofQuang.pdf");
+    $(".list").on({
+        click: function() {
+            $(".baoham").css("float", "right");
+            $(".baoham").css("background-color", "red");
+        }
     })
-    window.history.pushState("", "", $url);
 })

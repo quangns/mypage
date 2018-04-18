@@ -24,12 +24,12 @@
     display: inline-block;
     margin: auto 1px auto 0;
 }
-#wrapped {
+#wrapper {
     margin-top: 50px;
     width: 100%;
     height: 610px;
 }
-#wrapped embed {
+#wrapper embed {
     width: 100%;
     height: 100%;
 }
