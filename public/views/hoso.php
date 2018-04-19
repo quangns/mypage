@@ -1,1 +1,3 @@
-<embed src="../files/CVofQuang.pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+<div id="wrapper">
+<embed src="../files/CVofQuang.pdf" type='application/pdf'>
+</div>

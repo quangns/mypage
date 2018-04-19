@@ -33,7 +33,7 @@ $(document).ready(function() {
                 // window.history.pushState("", "", $url);
                 // var $url1      = window.location.href; 
                 // alert($url1 );
-                $(this).css("background-color","#74777a");
+                // $(this).css("background-color","#74777a");
             }
         }
     })
@@ -52,9 +52,6 @@ $(document).ready(function() {
                 $(".modal-signin").css("display", "none"); 
             }
         });
-        $(".test").click(function() {
-            $(".modal-sign").css("display", "none");
-        })
     };
     
     $("#close-modal").on({

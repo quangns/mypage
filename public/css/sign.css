@@ -45,6 +45,12 @@
     padding: 1px;
     border: solid 1px black;
 }
+.sign-header.btn-modal-signup {
+    border-radius: 0 8px 0 0;
+}
+.sign-header.btn-modal-signin {
+    border-radius: 8px 0 0 0;
+}
 .btn-modal-signup p {
     display: inline-block;
     padding-top: 10px;
@@ -59,4 +65,18 @@
     height: 20px;
     padding: 5px 0; 
     margin: 5px auto;
+    display: block;
+}
+.forgotpw {
+    width: 60%;
+    height: 30px;
+    margin: 5px auto;
+    padding-top: 5px;
+    color: blue;
+}
+.btnlog {
+    background-color: green;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: inherit;
 }

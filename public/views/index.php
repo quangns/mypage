@@ -40,7 +40,7 @@
                 ?>
             </ul>
         </div>
-        <div id="wrapper">
+        <!-- <div id="wrapper"> -->
             <!-- <embed src="files/CVofQuang.pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html"> -->
             <?php
                 $str = $menu->redirect_menu();
@@ -49,7 +49,7 @@
                 require $str;
             ?>
             <!-- noi dung web, su dung ajax -->
-        </div>
+        <!-- </div> -->
     </div>
 </body>
 </html>
