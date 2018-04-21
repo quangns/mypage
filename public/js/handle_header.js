@@ -33,7 +33,9 @@ $(document).ready(function() {
                 // window.history.pushState("", "", $url);
                 // var $url1      = window.location.href; 
                 // alert($url1 );
-                // $(this).css("background-color","#74777a");
+                $(this).css("background-color","#74777a");
+                // $(this).next('.muc').css("background-color", "black");
+                // $(this).prev('.muc').css("background-color", "black");
             }
         }
     })
@@ -54,12 +56,12 @@ $(document).ready(function() {
         });
     };
     
-    $("#close-modal").on({
+    $("#over-close-modal").on({
         mouseover: function() {
-            $(this).css("color", "red");
+            $(this).css("background-color", "rgba(0,0,0,0.2)");
         },
         mouseout: function() {
-            $(this).css("color", "black");
+            $(this).css("background-color", "transparent");
         },
         click: function() {
             $(".modal-sign").css("display", "none");

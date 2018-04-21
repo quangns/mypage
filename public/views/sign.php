@@ -4,8 +4,11 @@
     <div class="modal-content">
         <div class="modal-header">
             <div class="sign-header btn-modal-signin"><p>Sign in</p></div>
-            <div class="sign-header btn-modal-signup"><p>Sign up</p>
-            <p id="close-modal"><span><b>&times;</b></span></p>
+            <div class="sign-header btn-modal-signup btn-close"><p>Sign up</p>
+            <div class="btn-close">
+                <p id="close-modal"><span><b>&times;</b></span></p>
+                <p id="over-close-modal"></p>
+            </div>
             </div>
             
         </div>

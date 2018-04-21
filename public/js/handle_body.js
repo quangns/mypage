@@ -1,7 +1,10 @@
 $(document).ready(function() {
-    $(".list").on({
+    $(".href_music").on({
         click: function() {
-            $(".baoham").animate({right: "0px"});
+            $(".baoham").animate({right: '50px'});
+            $(".baoham").css("width", "30%");
+            $(".playmusic").css("display", "block");
+            $(".playmusic iframe").attr("src", $(this).attr("url"));
         }
     })
     $(".exp_route").on({
